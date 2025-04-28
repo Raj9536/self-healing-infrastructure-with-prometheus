@@ -1,0 +1,6 @@
+- name: Restart NGINX container
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Restart NGINX Docker container
+      shell: docker restart self-healing-infra_nginx_1
